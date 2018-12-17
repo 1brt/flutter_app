@@ -10,7 +10,7 @@ class ProductManager extends StatefulWidget {
 }
 
 class _ProductManagerState extends State<ProductManager> {
-  List<String> _products = ['Food Tester'];
+  List<String> _products = ['Bancada de Doces'];
   @override
   Widget build(BuildContext context) {
     return Column(children: [
