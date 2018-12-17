@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Meu Primeiro App v1.0'),
+          title: Text('Paraíso da Comida'),
         ),
         body: Card(
           child: Column(
