@@ -8,11 +8,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+          primarySwatch: Colors.deepOrange, accentColor: Colors.deepPurple),
       home: Scaffold(
           appBar: AppBar(
             title: Text('Meu Primeiro App'),
           ),
-          body: ProductManager('Bancada de Doce')),
+          body: ProductManager(startingProduct: 'Bancada de Doce')),
     );
   }
 }

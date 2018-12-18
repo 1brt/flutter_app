@@ -5,7 +5,7 @@ import './products.dart';
 class ProductManager extends StatefulWidget {
   final String startingProduct;
 
-  ProductManager(this.startingProduct);
+  ProductManager({this.startingProduct});
 
   @override
   State<StatefulWidget> createState() {
@@ -18,8 +18,13 @@ class _ProductManagerState extends State<ProductManager> {
 
   @override
   void initState() {
-    _products.add(widget.startingProduct);
     super.initState();
+    _products.add(widget.startingProduct);
+  }
+
+  @override
+  void didUpdateWidget(ProductManager oldWidget) {
+    super.didUpdateWidget(oldWidget);
   }
 
   @override
@@ -28,6 +33,7 @@ class _ProductManagerState extends State<ProductManager> {
       Container(
         margin: EdgeInsets.all(10),
         child: RaisedButton(
+          color: Theme.of(context).primaryColor,
           child: Text('Add Product'),
           onPressed: () {
             setState(() {
