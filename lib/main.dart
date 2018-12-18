@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('Meu Primeiro App'),
           ),
-          body: ProductManager()),
+          body: ProductManager('Bancada de Doce')),
     );
   }
 }
